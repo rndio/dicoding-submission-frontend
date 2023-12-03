@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+ol,ul{
+  padding: inherit;
+  margin: 0;
+}
+
+pre {
+  font-family: monospace;
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 1rem;
+  border-radius: .25rem;
+  overflow-x: auto;
+}
+
+header.navbar-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: .25rem .75rem;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 7%);
+  background-color: #fff;
+  gap: .5rem;
+}
+
+header.navbar-container nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 1.25rem;
+  padding: .5rem .75rem;
+}
+
+header.navbar-container nav ul li a{
+  text-decoration: none;
+  font-weight: 500;
+  color: rgba(0,0,0,.55);
+  transition: all .2s ease;
+}
+
+header.navbar-container nav ul li a:hover{
+  color: rgba(0,0,0,.75);
+}
+
+header.navbar-container nav ul li a.active{
+  font-weight: 600;
+  color: rgba(0,0,0,1);
+}
+
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+main article,
+main aside{
+  padding: 1.25rem;
+  background-color: #fff;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 7%);
+  border-radius: .5rem;
+}
+
+main article{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+main article img{
+  width: 100%;
+  height: auto;
+  border-radius: .25rem;
+}
+
+main article h1{
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(0,0,0,1);
+}
+
+main aside{
+  width: 100%;
+  height: 100%;
+}
+
+aside #author img.author-img{
+  border-radius: 50%;
+}
+
+aside #author .author-name{
+  margin-bottom: .25rem;
+  margin-top: .25rem;
+}
+
+aside #author .author-meta{
+  font-size: .876rem;
+  font-weight: 400;
+  font-family: system-ui, sans-serif;
+  color: rgba(0,0,0,.55);
+  margin-bottom: .5rem;
+}
+
+aside #author .author-meta time::after{
+  content: '\00B7';
+  margin: 0 .2rem;
+}
+
+aside #author .author-socialmedia{
+  display: flex;
+  gap: .6rem;
+  margin-top: .5rem;
+}
+
+aside #author .author-socialmedia a{
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgba(0,0,0,.55);
+}
+
+aside #author .author-socialmedia a:hover{
+  color: rgba(0,0,0,.75);
+} 
+
+
+footer#footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 7%);
+  gap: 1rem;
+}
+
+footer#footer .atribution{
+  font-size: .875rem;
+  color: rgba(0,0,0,.55);
+}
+
+footer#footer .atribution a{
+  text-decoration: none;
+  font-weight: 600;
+  color: rgba(0,0,0,.55);
+}
+
+footer#footer .atribution a:hover{
+  text-decoration: underline;
+}
+
+footer#footer .socialmedia{
+  display: flex;
+  gap: .5rem;
+}
+
+footer#footer .socialmedia a{
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: rgba(0,0,0,.55);
+}
+
+footer#footer .socialmedia a:hover{
+  color: rgba(0,0,0,.75);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header.navbar-container {
+    flex-direction: row;
+  }
+  
+  footer#footer {
+    flex-direction: row;
+  }
+
+  main{
+    display: flex;
+  }
+
+  main article{
+    width: 70%;
+  }
+
+  main aside{
+    width: 30%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
